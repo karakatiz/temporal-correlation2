@@ -1,0 +1,33 @@
+{
+  "name": "Сorrelation calculation",
+  "description": "Perviy shag.",
+  "keywords": ["V2ray", "Shadowsocks", "V2Ray-plugin"],
+  "env": {
+     "ENCRYPT": {
+      "description": "Encryption method.",
+      "value": "chacha20-ietf-poly1305"
+    },
+     "PASSWORD": {
+      "description": "Password",
+      "value": "f4ssni9s-gixuhcvn2k-ikmidzhuo7i9kgd"
+    },
+    
+     "V2_Path": {
+      "description": "Handler path. Auto-generated with some secret value.",
+      "generator": "secret"
+    },
+
+     "AppName": {
+      "description": "App Name filled in at the top (or even full domain if there is a custom one) to generate the configuration and QR code. If you don’t want to generate it, enter no",
+      "value": "no"
+    },
+
+    "QR_Path": {
+       "description": "QR code and configuration link path, the default qr_img, you can also use uuid for confidentiality, but it cannot be the same as V2_Path. If the AppName variable is no, this variable has no effect",
+       "value": "/qr"
+     }
+  },
+  "website": "",
+  "repository": "",
+  "stack": "container"
+ }
